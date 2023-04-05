@@ -1,0 +1,62 @@
+.container {
+  padding-top: 10rem;
+  height: 100vh;
+  background: var(--main-gray);
+}
+
+.search {
+  width: 100%;
+  height: 12rem;
+}
+
+.new__diary {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.test__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10rem;
+  height: 10rem;
+  z-index: 1000;
+  background-color: red;
+}
+
+.test__div {
+  position: fixed;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background-color: white;
+  border-radius: 3rem 3rem 0 0;
+  z-index: 2000;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.hide {
+  animation: slide-down 2s;
+}
+.show {
+  animation: slide-up 2s;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translate(0, 100%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 100%);
+  }
+}

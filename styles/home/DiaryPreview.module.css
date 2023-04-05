@@ -1,0 +1,51 @@
+.diary {
+  width: 100%;
+  background-color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.diary__list {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.diary__boxes {
+  border-radius: 1rem;
+  width: calc((100% - 2rem) / 2);
+  height: calc((100vw - 2rem) / 2);
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.diary__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 15%;
+}
+
+.diary__content {
+  overflow: hidden;
+  max-height: 15rem;
+  height: 70%;
+}
+
+.diary .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diary__boxes .footer {
+  bottom: 1rem;
+  width: 100%;
+  height: 15%;
+}
+
+.diary .emotion {
+  width: 3rem;
+  border: 0;
+  background: none;
+  text-align: right;
+}

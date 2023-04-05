@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: var(--main-gray);
+}
+
+.diary__boxes {
+  padding-left: 1rem;
+  gap: 1rem;
+  padding-top: 1rem;
+}

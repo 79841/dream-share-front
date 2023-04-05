@@ -1,0 +1,179 @@
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  background: var(--main-gray);
+}
+
+.title {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 5rem;
+  background: var(--main-gray);
+}
+
+.title input {
+  width: 100%;
+  height: 4rem;
+  outline: none;
+  border: 0;
+  background: none;
+  color: var(--main-black);
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.title input::placeholder {
+  color: var(--main-black);
+  font-size: 1.5rem;
+}
+
+.content {
+  width: 100%;
+  min-height: 50rem;
+  background: var(--main-gray);
+}
+
+.content textarea {
+  width: 100%;
+  height: 50rem;
+  resize: none;
+  border: 0;
+  display: flex;
+  background: none;
+  color: var(--main-black);
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.content textarea::placeholder {
+  color: var(--main-black);
+  font-size: 1.5rem;
+}
+
+.content textarea:focus {
+  outline: 0;
+}
+
+.hashtag {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem;
+  background: var(--main-gray);
+}
+
+.hashtag input {
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  border: 0;
+  background: none;
+  font-size: 1.5rem;
+  color: var(--main-black);
+}
+
+.hashtag input::placeholder {
+  font-size: 1.5rem;
+  color: var(--main-black);
+}
+
+.emotion {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.emotion button {
+  width: 5rem;
+  height: 3rem;
+  background: none;
+  border: 0;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.emotion button:hover {
+  background: var(--dark-gray);
+}
+
+.openscope {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.openscope button {
+  width: 8rem;
+  font-size: 1.5rem;
+  height: 3rem;
+  background: none;
+  border: 0;
+  border-radius: 1rem;
+  color: var(--main-black);
+}
+
+.openscope button:hover {
+  background: var(--dark-gray);
+}
+
+.submit {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: none;
+  color: var(--main-black);
+  font-size: 1.5rem;
+}
+
+.remove {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove button {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: none;
+  color: var(--main-black);
+  font-size: 1.5rem;
+}
+
+.submit button:active {
+  opacity: 0.7;
+  background: var(--dark-gray);
+}
+
+.emotion .selected,
+.openscope .selected {
+  background: var(--dark-gray);
+}
+
+.emotion .unselected,
+.openscope .unselected {
+  background: var(--main-gray);
+}
